@@ -3,15 +3,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#2563eb",    // calm blue
-        secondary: "#10b981",  // emerald green
-        accent: "#0ea5e9",     // sky blue accent
-        warning: "#f59e0b",    // amber
-        danger: "#ef4444",     // red
-        background: "#f8fafc", // slate-50
-        surface: "#ffffff"     // white surface
+        primary: "#3b82f6",
+        secondary: "#10b981",
+        accent: "#6366f1",
+        warning: "#f59e0b",
+        danger: "#ef4444",
+        background: "#111827",
+        surface: "#1f2937",
+        "text-primary": "#d1d5db",
+        "text-secondary": "#9ca3af",
+      },
+      fontFamily: {
+        sans: ["'Inter var'", "Inter", "sans-serif"],
       }
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 };
